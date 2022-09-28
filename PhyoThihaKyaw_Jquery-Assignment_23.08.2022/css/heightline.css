@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+
+ul li {
+  float: left;
+  width: 19%;
+  margin: 1%;
+  margin-bottom: 10px;
+  padding: 1%;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+div li:last-of-type {
+  margin-right: 0;
+}

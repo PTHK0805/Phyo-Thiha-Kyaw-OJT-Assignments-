@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Navigation */
+
+header {
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, .4);
+}
+
+nav li {
+  float: left;
+  padding: 3px 40px;
+  font-size: 16px;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav li:first-child {
+  margin-left: 100px;
+}
+
+nav li a {
+  color: #000;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+  nav li {
+    padding: 0.293vw 1.953vw;
+    font-size: 1.563vw;
+    letter-spacing: 0.195vw;
+  }
+
+  nav li:first-child {
+    margin-left: 0.488vw;
+  }
+
+}
+
+@media screen and (max-width:767.9px) {
+  header {
+    position: relative;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 30%;
+    height: 100vh;
+    background-color: #2b2b2b;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+  }
+
+  nav li {
+    float: none;
+    width: 100%;
+    padding: 2.604vw;
+    font-size: 2.083vw;
+    white-space: nowrap;
+    letter-spacing: 0.26vw;
+    text-transform: uppercase;
+  }
+
+  nav li:first-child {
+    margin-left: 0;
+  }
+
+  nav li a {
+    color: #fff;
+  }
+
+  /* Menu Trigger */
+  .menu-trigger {
+    display: block;
+    position: absolute;
+    top: 1.302vw;
+    right: 1.302vw;
+    z-index: 1;
+    width: 5.208vw;
+    height: 2.995vw;
+
+  }
+
+  .menu-trigger span {
+    position: absolute;
+    width: 100%;
+    height: 0.391vw;
+    background-color: #000;
+    transition: .3s;
+    border-radius: 0.521vw;
+  }
+
+  .menu-trigger span:nth-of-type(1) {
+    top: 0;
+  }
+
+  .menu-trigger span:nth-of-type(2) {
+    top: 1.302vw;
+  }
+
+  .menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
+
+  .menu-trigger.active span {
+    background-color: #fff;
+  }
+
+  .menu-trigger.active span:nth-of-type(1) {
+    transform: translateY(1.302vw) rotate(-45deg);
+  }
+
+  .menu-trigger.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .menu-trigger.active span:nth-of-type(3) {
+    transform: translateY(-1.302vw) rotate(45deg);
+  }
+
+
+}

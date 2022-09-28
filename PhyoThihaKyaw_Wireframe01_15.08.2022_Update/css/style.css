@@ -1,0 +1,111 @@
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  max-width: 800px;
+}
+
+body,
+nav,
+.box,
+article,
+aside,
+footer,
+header {
+  border: 1px solid #000;
+}
+
+header,
+nav,
+article,
+aside,
+footer {
+  text-align: center;
+}
+
+.heading-color {
+  background-color: #EEBC7C;
+}
+
+.navigation-color {
+  background-color: #4DB895;
+}
+
+.box-color {
+  background-color: #E6D1B7;
+}
+
+.content-color {
+  background-color: #8C8CC0;
+}
+
+.as-color {
+  background-color: #C43333;
+}
+
+.footing-color {
+  background-color: #EEE568;
+}
+
+header {
+  margin-bottom: 8px;
+  padding: 20px;
+
+}
+
+nav {
+  float: left;
+  width: 19%;
+  margin-right: 8px;
+  padding: 100px 5px;
+}
+
+.box {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.contents-sec {
+  float: right;
+  width: 80%;
+}
+
+.contents-sec h2 {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.contents-sec article {
+  float: left;
+  width: 47%;
+  margin-left: 10px;
+  padding: 100px 10px;
+}
+
+.side-content {
+  float: right;
+  width: 47%;
+  margin: 0 10px;
+}
+
+aside {
+  margin-bottom: 10px;
+  padding: 36px 10px;
+}
+
+.contents-sec .second-article {
+  padding: 36px;
+}
+
+footer {
+  width: 100%;
+  padding: 17px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Form Example</title>
+  </head>
+  <body>
+    <div class="example-form">
+      <div class="container card">
+        <h1>Example Form</h1>
+        <form action="">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" />
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" />
+          <label for="membership">Memberships</label>
+          <select id="membership">
+            <optgroup label="Memberships">
+              <option value="silver">Silver</option>
+              <option value="gold" selected>Gold</option>
+              <option value="diamond">Diamond</option>
+            </optgroup>
+          </select>
+          <label for="genter">Gender</label>
+          <div class="gender">
+            <div>
+              <input type="radio" name="gender" id="male" />
+              <label for="male">male</label>
+
+              <input type="radio" name="gender" id="female" />
+              <label for="female">Female</label>
+            </div>
+          </div>
+
+          <label for="about">About</label>
+          <textarea id="about" cols="30" rows="10"></textarea>
+
+          <a class="btn" href="#">Summit</a>
+          <a class="btn" href="#">Cancel</a>
+        </form>
+      </div>
+    </div>
+
+    <div class="card2 clearfix">
+      <div class="card2__head">
+        <img src="img/avatar.png" alt="Male Avatar" />
+      </div>
+      <div class="card2__body">
+        <p>@ Phyo Thiha Kyaw</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+          officia ea. Repudiandae tempore adipisci ea.
+        </p>
+        <div class="line"></div>
+        <div class="react">
+          <i class="fa-solid fa-comment">242</i>
+          <i class="fa-solid fa-share">142</i>
+          <i class="fa-solid fa-heart">2.6k</i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

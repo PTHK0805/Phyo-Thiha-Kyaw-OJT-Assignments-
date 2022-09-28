@@ -1,0 +1,261 @@
+body {
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+  max-width: 1360px;
+}
+
+/* Anchor */
+
+.links{
+  position: fixed;
+  top: 10px;
+}
+
+li {
+  float: left;
+  margin-right: 20px;
+}
+
+.link {
+  display: block;
+  padding: 10px;
+  background-color: #7fffd4;
+  color: #000;
+  border-radius: 3px;
+}
+
+.sec {
+  width: 100%;
+  margin-top: 20px;
+  padding: 200px 200px 200px 10px;
+}
+
+#sec-one {
+  background-color: #237cf0;
+}
+
+#sec-two {
+  background-color: #faebd7;
+}
+
+#sec-three {
+  background-color: #663399;
+}
+
+#sec-four {
+  background-color: #f0ffff;
+}
+
+.container {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  max-width: 900px;
+}
+
+/* Slider */
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  text-align: center;
+}
+
+ul {
+  position: relative;
+}
+
+ul .list-item {
+  width: 100px;
+  padding: 50px 0;
+  background-color: rgb(6, 227, 243);
+  color: #fff;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.slick-slide {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
+
+/* Arrows */
+
+.prev-arrow,.next-arrow{
+  position: absolute;
+}
+
+.prev-arrow {
+  left: -25px;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../img/img_arrow_left.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: .3;
+  transition: .6s;
+}
+
+.next-arrow {
+  right: -25px;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../img/img_arrow_right.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: .3;
+  transition: .6s;
+}
+
+
+.prev-arrow:hover, .next-arrow:hover{
+opacity: 1;
+}
+
+.image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.fade .image img {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.main {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  font-family: Arial;
+}
+
+h3 {
+  position: relative;
+  line-height: 100px;
+  margin: 10px;
+  padding: 2%;
+  background: #fff;
+  color: #3498db;
+  font-size: 36px;
+  text-align: center;
+}
+
+.main h3{
+  background-color: #ccc;
+}
+
+.action {
+  display: block;
+  width: 100%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.action a {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #f30;
+  color: #fff;
+  text-decoration: none;
+}
+
+.action a:hover {
+  background: #000;
+}
+
+.buttons {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.buttons .button {
+  float: left;
+  width: 23%;
+  margin: 5px;
+  background: #ccc;
+  color: #3498db;
+}
+
+.button {
+  display: block;
+  width: 48%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #3498db;
+  color: rgb(145, 126, 126);
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Dots */
+.slick-dots {
+  display: inline-block;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.slick-dots li {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 0;
+  margin: 0 auto;
+  padding: 5px;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  font-size: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.slick-dots li button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  color: black;
+  font-size: 22px;
+  text-align: center;
+  content: "•";
+  opacity: 0.25;
+}
+
+.slick-dots .slick-active button::before {
+  opacity: 1;
+}
